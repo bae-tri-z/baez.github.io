@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <link rel="shortcut icon" href="assets/media/baez.svg" alt="logo Baez" type="image/x-icon">
+        
+        <title>Baez</title>
+
+        <script src="./assets/js/filtro.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="header">
+            <div id="mobile">
+                <div class="baez">
+                    <a href="index.html"><img src="./assets/media/baez.svg" alt="logo Baez"></a>
+                </div>
+                <div class="menu-container">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                    <label for="menu-toggle" class="hamburger">☰</label>
+                    <div class="navigation" id="mobileMenu">
+                        <a href="colecao.html"><li><span>⊹ ࣪ ˖</span> Coleção <span>˖࣪  ⊹</span></li></a>
+                        <a href="eventos.html"><li> Eventos </li></a>
+                        <a href="encomendas.html"><li> Encomendas </li></a>
+                        <a target="_blank" href="https://www.vinted.pt/member/75724370"><li>Loja <span>↗</span></li></a>
+                    </div>
+                </div>
+            </div>
+            <div id="desktop">                
+                <div class="navigacao">
+                    <a href="colecao.html"><li class="select">Coleção</li></a>
+                    <a href="eventos.html"><li>Eventos</li></a>
+                    <a href="index.html"><li><img class="baez" src="./assets/media/baez.svg" alt="logo Baez"></li></a>
+                    <a href="encomendas.html"><li>Encomendas</li></a>
+                    <a target="_blank" href="https://www.vinted.pt/member/75724370"><li>Loja <span>↗</span></li></a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="colecao">
+                <div class="filtro">
+                    <div class="opcao"><label><input type="checkbox" class="filter-option" value="todos"><span>Todos</span></label></div>
+                    <div class="opcao"><label><input type="checkbox" class="filter-option" value="brincos"><span>Brincos</span></label></div>
+                    <div class="opcao"><label><input type="checkbox" class="filter-option" value="charms"><span>Charms</span></label></div>
+                    <div class="opcao"><label><input type="checkbox" class="filter-option" value="crochet"><span>Crochet</span></label></div>
+                    <div class="opcao"><label><input type="checkbox" class="filter-option" value="stickers"><span>Stickers</span></label></div>
+                </div> 
+                <div class="colecao">
+                    <div class="frame" data-name="brincos"> <!-- Cherry brincos -->
+                        <div class="foto">
+                            <a href="./colecao/brincos-cherry.html">
+                                <img src="./assets/media/produtos/Cherry-0.jpg" alt="Cherry brincos" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Cherry</h2>
+                            <h3 class="preco">3,50€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="charms"> <!-- Flora amarelo charms -->
+                        <div class="foto">
+                            <a href="./colecao/charm-flora-amarelo.html">
+                                <img src="./assets/media/produtos/Flora-amarelo-0.jpg" alt="Flora amarelo charm" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Flora amarelo</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="charms"> <!-- Flora azul charms -->
+                        <div class="foto">
+                            <a href="./colecao/charm-flora-azul.html">
+                                <img src="./assets/media/produtos/Flora-azul-0.jpg" alt="Flora azul charm" />
+                            </a>
+                            <div class="status-nao">Sold out</div>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Flora azul</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="charms"> <!-- Flora azul esverdeado charms -->
+                        <div class="foto">
+                            <a href="./colecao/charm-flora-azul-esverdeado.html">
+                                <img src="./assets/media/produtos/Flora-esverdeado-0.jpg" alt="Flora azul esverdeado charm" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Flora azul esverdeado</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="charms"> <!-- Flora laranja charms -->
+                        <div class="foto">
+                            <a href="./colecao/charm-flora-laranja.html">
+                                <img src="./assets/media/produtos/Flora-laranja-0.jpg" alt="Flora laranja charm" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Flora laranja</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="charms"> <!-- Flora lilás charms -->
+                        <div class="foto">
+                            <a href="./colecao/charm-flora-lilas.html">
+                                <img src="./assets/media/produtos/Flora-lilas-0.jpg" alt="Flora lilás charm" />
+                            </a>
+                            <div class="status-nao">Sold out</div>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Flora lilás</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="charms"> <!-- Flora rosa charms -->
+                        <div class="foto">
+                            <a href="./colecao/charm-flora-rosa.html">
+                                <img src="./assets/media/produtos/Flora-rosa-0.jpg" alt="Flora rosa charm" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Flora rosa</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="crochet"> <!-- Love letter crochet -->
+                        <div class="foto">
+                            <a href="./colecao/crochet-love-letter.html">
+                                <img src="./assets/media/produtos/Love-letter-0.jpg" alt="Love letter crochet" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Love Letter</h2>
+                            <h3 class="preco">30,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="crochet"> <!-- Poro crochet -->
+                        <div class="foto">
+                            <a href="./colecao/crochet-poro.html">
+                                <img src="./assets/media/produtos/Poro-0.jpg" alt="Poro League of Legends crochet" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Poro</h2>
+                            <h3 class="preco">40,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="crochet"> <!-- Poro mini crochet -->
+                        <div class="foto">
+                            <a href="./colecao/crochet-poro-mini.html">
+                                <img src="./assets/media/produtos/Poro-mini-0.jpg" alt="Poro mini League of Legends crochet" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Mini Poro</h2>
+                            <h3 class="preco">15,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="stickers"> <!-- Poro ahri sticker -->
+                        <div class="foto">
+                            <a href="./colecao/sticker-poro-ahri.html">
+                                <img src="./assets/media/produtos/Poro-Ahri-0.jpg" alt="Poro Ahri League of Legends sticker" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Poro Ahri</h2>
+                            <h3 class="preco">1,00€</h3>
+                        </div>
+                    </div> 
+                    <div class="frame" data-name="stickers"> <!-- Poro cait sticker -->
+                        <div class="foto">
+                            <a href="./colecao/sticker-poro-caitlyn.html">
+                                <img src="./assets/media/produtos/Poro-Cait-0.jpg" alt="Poro Caitlyn League of Legends sticker" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Poro Caitlyn</h2>
+                            <h3 class="preco">1,00€</h3>
+                        </div>
+                    </div> 
+                    <div class="frame" data-name="stickers"> <!-- Poro vi sticker -->
+                        <div class="foto">
+                            <a href="./colecao/sticker-poro-vi.html">
+                                <img src="./assets/media/produtos/Poro-Vi-0.jpg" alt="Poro VI League of Legends sticker" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Poro VI</h2>
+                            <h3 class="preco">1,00€</h3>
+                        </div>
+                    </div> 
+                    <div class="frame" data-name="brincos"> <!-- Rainy Clouds brincos -->
+                        <div class="foto">
+                            <a href="./colecao/brincos-rainy-clouds.html">
+                                <img src="./assets/media/produtos/RC-0.jpg" alt="Rainy Clouds brincos" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Rainy Clouds</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="brincos"> <!-- Rainy Clouds Azuis brincos -->
+                        <div class="foto">
+                            <a href="./colecao/brincos-rainy-clouds-azuis.html">
+                                <img src="./assets/media/produtos/RC-blue-0.jpg" alt="Rainy Clouds azuis brincos" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Rainy Clouds azuis</h2>
+                            <h3 class="preco">4,00€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="brincos"> <!-- Tinker Bell branco brincos -->
+                        <div class="foto">
+                            <a href="./colecao/brincos-tinker-bell-branco.html">
+                                <img src="./assets/media/produtos/TB-branco-silver-0.jpg" alt="Tinker Bell branco brincos" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Tinker Bell branco</h2>
+                            <h3 class="preco">3,50€</h3>
+                        </div>
+                    </div>
+                    <div class="frame" data-name="brincos"> <!-- Tinker Bell rosa brincos -->
+                        <div class="foto">
+                            <a href="./colecao/brincos-tinker-bell-rosa.html">
+                                <img src="./assets/media/produtos/TB-rosa-gold-0.jpg" alt="Tinker Bell rosa brincos" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo">Tinker Bell rosa</h2>
+                            <h3 class="preco">3,50€</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Obrigada por apoiares a Baez! <3</p>
+            <div class="redes">
+                <a target="_blank" href="https://www.instagram.com/shop_baez/"><img src="./assets/media/instagram.svg"></a>
+                <a target="_blank" href="https://www.tiktok.com/@shop_baez?lang=en-GB"><img src="./assets/media/tiktok.svg"></a>
+                <a target="_blank" href="https://www.vinted.pt/member/75724370"><img src="./assets/media/vinted.svg"></a>
+            </div>
+        </footer>
+    </body>
+</html>

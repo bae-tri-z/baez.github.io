@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <link rel="shortcut icon" href="assets/media/baez.svg" alt="logo Baez" type="image/x-icon">
+
+        <title>Baez</title>
+
+    </head>
+
+    <body>
+        <nav class="header">
+            <div id="mobile">
+                <div class="baez">
+                    <a href="index.html"><img src="./assets/media/baez.svg" alt="logo Baez"></a>
+                </div>
+                <div class="menu-container">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                    <label for="menu-toggle" class="hamburger">☰</label>
+                    <div class="navigation" id="mobileMenu">
+                        <a href="colecao.html"><li> Coleção </li></a>
+                        <a href="eventos.html"><li><span>⊹ ࣪ ˖</span> Eventos <span>˖࣪  ⊹</span></li></a>
+                        <a href="encomendas.html"><li> Encomendas </li></a>
+                        <a target="_blank" href="https://www.vinted.pt/member/75724370"><li>Loja <span>↗</span></li></a>
+                    </div>
+                </div>
+            </div>
+            <div id="desktop">                
+                <div class="navigacao">
+                    <a href="colecao.html"><li>Coleção</li></a>
+                    <a href="eventos.html"><li class="select">Eventos</li></a>
+                    <a href="index.html"><li><img class="baez" src="./assets/media/baez.svg" alt="logo Baez"></li></a>
+                    <a href="encomendas.html"><li>Encomendas</li></a>
+                    <a target="_blank" href="https://www.vinted.pt/member/75724370"><li>Loja <span>↗</span></li></a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="eventos-container">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month">‹</button>
+                        <div id="month-year"></div>
+                        <button id="next-month">›</button>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-weekdays">
+                            <div>D</div>
+                            <div>S</div>
+                            <div>T</div>
+                            <div>Q</div>
+                            <div>Q</div>
+                            <div>S</div>
+                            <div>S</div>
+                        </div>
+                        <div class="calendar-dates"></div>
+                    </div>
+                </div>
+
+                <div class="eventos">
+                    <div class="eventos-futuros">
+                        <h1>Eventos <span>futuros</span></h1>
+                        <div class="evento">  
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Avant Pop</h2>
+                                    <p>Shopping Brasília Porto</p>
+                                </div>
+                                <div class="data-hora">
+                                    <p>29.jul.2025</p>
+                                    <p>10h00</p>
+                                </div>
+                            </div> 
+                            <div class="ad-calendario">
+                                <button class="btn-calendario">Adicionar ao calendário</button>
+                                <div class="calendar-options" style="display: none;">
+                                    <a href="#" class="google-link" target="_blank">Google Calendar</a>
+                                    <a href="#" class="ics-link">iPhone / Outlook</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eventos-passados">
+                        <h1>Eventos <span>passados</span></h1>
+                        <div class="evento"> <!-- 11 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Avant Pop <span>(9.ª ed.)</span></h2>
+                                    <p>Shopping Brasília</p>
+                                    <p>29.mar.2025, 11h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=11" class="envelope" data-id="11"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div>
+                        <div class="evento"> <!-- 10 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Valentine's Love Shot</h2>
+                                    <p>Incredible Store</p>
+                                    <p>15.fev.2025, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=10" class="envelope" data-id="10"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div>
+                        <div class="evento"> <!-- 9 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Happy Soul Day</h2>
+                                    <p>Incredible Store</p>
+                                    <p>9.fev.2025, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=9" class="envelope" data-id="9"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 8 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Sanctuary Heaven</h2>
+                                    <p>YOAM</p>
+                                    <p>26.jan.2025, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=8" class="envelope" data-id="8"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 7 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Artishout <span>(4.ª ed.)</span></h2>
+                                    <p>Maus Hábitos</p>
+                                    <p>28.dez.2024, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=7" class="envelope" data-id="7"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 6 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Avant Pop <span>(7.ª ed.)</span></h2>
+                                    <p>Shopping Brasília</p>
+                                    <p>14.dez.2024, 11h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=6" class="envelope" data-id="6"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 5 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>PC Halloween Fest</h2>
+                                    <p>Incredible Store</p>
+                                    <p>2.nov.2024, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=5" class="envelope" data-id="5"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 4 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Avant Pop <span>(5.ª ed.)</span></h2>
+                                    <p>Shopping Brasília</p>
+                                    <p>1.nov.2024, 11h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=4" class="envelope" data-id="4"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 3 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Back to School</h2>
+                                    <p>Parque da Cidade do Porto</p>
+                                    <p>14.set.2024, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=3" class="envelope" data-id="3"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 2 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>Back to School</h2>
+                                    <p>Parque da Cidade do Porto</p>
+                                    <p>31.ago.2024, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=2" class="envelope" data-id="2"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="evento"> <!-- 1 -->
+                            <div class="cima">
+                                <div class="nome-local">
+                                    <h2>ATE</h2>
+                                    <p>Incredible Store</p>
+                                    <p>17.ago.2024, 14h00</p>
+                                </div>
+                            </div> 
+                            <div class="event-icon">
+                                <a href="./eventos/mensagens.html?mensagem=1" class="envelope" data-id="1"><img src="./assets/media/mail-fill.svg"></a>
+                            </div>
+                        </div> 
+
+                        <button id="ver-mais-eventos" class="btn-ver-mais">Ver mais</button>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Obrigada por apoiares a Baez! <3</p>
+            <div class="redes">
+                <a target="_blank" href="https://www.instagram.com/shop_baez/"><img src="./assets/media/instagram.svg"></a>
+                <a target="_blank" href="https://www.tiktok.com/@shop_baez?lang=en-GB"><img src="./assets/media/tiktok.svg"></a>
+                <a target="_blank" href="https://www.vinted.pt/member/75724370"><img src="./assets/media/vinted.svg"></a>
+            </div>
+        </footer>
+
+        <script src="./assets/js/eventos.js"></script>
+
+    </body>
+</html>

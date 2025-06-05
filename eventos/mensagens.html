@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+        <link rel="shortcut icon" href="../assets/media/baez.svg" alt="logo Baez" type="image/x-icon">
+
+        <title>Baez</title>
+
+    </head>
+
+    <body>
+        <nav class="header">
+            <div id="mobile">
+                <div class="baez">
+                    <a href="../index.html"><img src="../assets/media/baez.svg" alt="logo Baez"></a>
+                </div>
+                <div class="menu-container">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                    <label for="menu-toggle" class="hamburger">☰</label>
+                    <div class="navigation" id="mobileMenu">
+                        <a href="../colecao.html"><li> Coleção </li></a>
+                        <a href="../eventos.html"><li><span>⊹ ࣪ ˖</span> Eventos <span>˖࣪  ⊹</span></li></a>
+                        <a href="../encomendas.html"><li> Encomendas </li></a>
+                        <a target="_blank" href="https://www.vinted.pt/member/75724370"><li>Loja <span>↗</span></li></a>
+                    </div>
+                </div>
+            </div>
+            <div id="desktop">                
+                <div class="navigacao">
+                    <a href="../colecao.html"><li>Coleção</li></a>
+                    <a href="../eventos.html"><li class="select">Eventos</li></a>
+                    <a href="../index.html"><li><img class="baez" src="../assets/media/baez.svg" alt="logo Baez"></li></a>
+                    <a href="../encomendas.html"><li>Encomendas</li></a>
+                    <a target="_blank" href="https://www.vinted.pt/member/75724370"><li>Loja <span>↗</span></li></a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="eventos-container">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month">‹</button>
+                        <div id="month-year"></div>
+                        <button id="next-month">›</button>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-weekdays">
+                            <div>D</div>
+                            <div>S</div>
+                            <div>T</div>
+                            <div>Q</div>
+                            <div>Q</div>
+                            <div>S</div>
+                            <div>S</div>
+                        </div>
+                        <div class="calendar-dates">
+                            <!-- Dates will be populated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <section class="mensagens"> 
+                    <div class="mensagens-container">
+                        <div class="mensagem" data-id="11">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/11.jpg" class="envelope-icon" data-id="11">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Avant Pop <span>(9.ª ed.)</span></h1>
+                                    <h2>Shopping Brasília</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sáb., 29.mar.2025</p>
+                                </div>
+                                <div class="texto">
+                                    <p>O</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+
+                                <div class="navegacao">
+                                    <div class="nenhum">
+                                        <button class="anterior"><</button>
+                                    </div>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="10">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/10.jpg" class="envelope-icon" data-id="10">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Valentine's Love Shot</h1>
+                                    <h2>Incredible Store</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>ter., 15.fev.2025</p>
+                                </div>
+                                <div class="texto">
+                                    <p>a</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="9">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/9.jpg" class="envelope-icon" data-id="9">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Happy Soul Day</h1>
+                                    <h2>Incredible Store</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>dom., 9.fev.2025</p>
+                                </div>
+                                <div class="texto">
+                                    <p>O evento do Happy Soul Day, organizado pela Hamkecrew, teve lugar na Incredible Store, uma loja de K-pop do Porto. Teve duração das 13h00 às 19h00 e não houve um minuto de silêncio.<br>
+                                    Todas as bancas foram espetaculares e uma ótima companhia. Os participantes vieram cheios de energia e enchiam a sala de risos (e alguns berros também, principalmente quando saía o seu bias numa abertura de álbum).<br>
+                                    É o nosso terceiro evento com a Hamke e não podia estar mais satisfeita com a sua organização e amistade.<br>
+                                    Estou ansiosa para o próximo evento de k-pop e de continuar a conhecer-vos <3.</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="8">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/8.JPG" class="envelope-icon" data-id="8">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Sanctuary Heaven</h1>
+                                    <h2>YOAM</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>dom., 26.jan.2025</p>
+                                </div>
+                                <div class="texto">
+                                    <p>b</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="7">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/7.jpg" class="envelope-icon" data-id="7">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Artishout <span>(4.ª ed.)</span></h1>
+                                    <h2>Maus Hábitos</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sáb., 28.dez.2024</p>
+                                </div>
+                                <div class="texto">
+                                    <p>b</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="6">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/6.JPG" class="envelope-icon" data-id="6">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Avant Pop <span>(7.ª ed.)</span></h1>
+                                    <h2>Shopping Brasília</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sáb., 14.dez.2024</p>
+                                </div>
+                                
+                                <div class="texto">
+                                    <p>a</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="5">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/5.JPG" class="envelope-icon" data-id="5">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>PC Halloween Fest</h1>
+                                    <h2>Incredible Store</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sáb., 2.nov.2024</p>
+                                </div>
+                                <div class="texto">
+                                    <p>b</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="4">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/4.jpg" class="envelope-icon" data-id="4">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Avant Pop <span>(5.ª ed.)</span></h1>
+                                    <h2>Shopping Brasília</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sex., 1.nov.2024</p>
+                                </div>
+                                <div class="texto">
+                                    <p>b</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="3">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/3.png" class="envelope-icon" data-id="3">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Back to School</h1>
+                                    <h2>Parque da Cidade do Porto</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sáb., 14.set.2024</p>
+                                </div>
+                                <div class="texto">
+                                    <p>b</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="2">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/2.jpg" class="envelope-icon" data-id="2">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>Back to School</h1>
+                                    <h2>Parque da Cidade Porto</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sáb., 31.ag.2024</p>
+                                </div>
+                                
+                                <div class="texto">
+                                    <p>a</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <button class="seguinte">></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensagem" data-id="1">
+                            <div class="imagem">
+                                <img src="../assets/media/eventos/1.jpg" class="envelope-icon" data-id="1">
+                            </div>
+                            <div class="conteudo">
+                                <div class="titulo">
+                                    <h1>ATE</h1>
+                                    <h2>Incredible Store</h2>
+                                </div>
+                                <div class="dia">
+                                    <p>sáb., 17.ag.2024</p>
+                                </div>
+                                <div class="texto">
+                                    <p>O meu primeiro evento!!!</p>
+                                </div>
+                                <div class="ass">
+                                    <p>Baez.</p>
+                                </div>
+                                <div class="navegacao">
+                                    <button class="anterior"><</button>
+                                    <a href="../eventos.html">Eventos</a>
+                                    <div class="nenhum">
+                                        <button class="seguinte">></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script src="../assets/js/eventos.js"></script>
+        <script src="../assets/js/eventos-msg.js"></script>
+
+    </body>
+</html>
