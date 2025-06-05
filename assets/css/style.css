@@ -634,6 +634,7 @@ main {
         border: none;
         font-size: 18px;
         margin: 0px 15px 0px 15px;
+        text-decoration: none;
     }
 
     #encomendas .menu .ativo {
@@ -1205,6 +1206,15 @@ main {
     }
 
 
+}
+@media screen and (min-width: 550px) {
+     .mensagem.ativa .imagem {
+        order: 1;
+        width: 100%;
+        max-height: 550px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
 }
 /* -------------------- FOOTER -------------------- */
 @media screen and (min-width: 250px) {
@@ -2042,6 +2052,9 @@ main {
         font-weight: 600;
     }
 
+    #eventos-container .mensagens .mensagem span {
+        font-weight: 400;
+    }
 }
 @media screen and (min-width: 1300px) {
     .mensagens {
