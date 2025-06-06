@@ -443,6 +443,11 @@ main {
         font-weight: 400;
     }
 
+    #pagina-produto .descri .texto p a {
+        color: #91829a;
+        text-decoration: underline;
+    }
+
     #pagina-produto .swiper .available-nao {
         position: absolute;
         z-index: 2;
@@ -538,13 +543,17 @@ main {
 
     #pagina-produto .texto p {
         font-size: 15px;
-        margin: 10px 0px 25px 0px;
+        margin: 10px 0px 10px 0px;
     }
 
     #pagina-produto .texto h2 {
         font-size: 15px;
         font-weight: 500;
         margin-bottom: 20px;
+    }
+
+    #pagina-produto .specs {
+        margin-top: 30px;
     }
 
     #pagina-produto .texto ul {
@@ -965,11 +974,7 @@ main {
     }
 }
 /* -------------------- EVENTOS -------------------- */
-@media screen and (max-width: 879px) {
-
-    .calendar {
-        display: none;
-    }
+@media screen and (min-width: 250px) {
 
     #eventos-container {
         display: flex;
@@ -1024,6 +1029,8 @@ main {
     }
 
     #eventos-container .eventos-futuros .ad-calendario {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -1038,33 +1045,26 @@ main {
         padding: 15px 0px;
     }
 
-    #eventos-container .calendar-options {
-        position: absolute;
+    #eventos-container .ad-calendario .calendar-options {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
         background: white;
         border: 1px solid #d9bce7;
-        border-radius: 20px;
-        margin-top: 47px;
+        border-radius: 30px;
         padding: 12px 0px 12px 0px;
-        z-index: 10;
+        z-index: 4;
         width: 100%;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.171);
     }
 
     .calendar-options a {
-        text-decoration: none;
-        color: #333;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .ad-calendario {
-        position: relative;
-        display: flex;
-        justify-content: center;
+        display: block;
         width: 100%;
+        text-decoration: none;
+        padding: 12px 0px;
+        color: #333;
+        text-align: center;
     }
 
     #eventos-container .eventos p {
@@ -1103,7 +1103,6 @@ main {
         cursor: pointer;
         width: 100%;
         text-align: center;
-        transition: background 0.2s ease;
     }
 }
 /* -------------------- EVENTOS-MSG -------------------- */
@@ -1664,10 +1663,6 @@ main {
 /* -------------------- EVENTOS -------------------- */
 @media screen and (min-width: 880px) {
 
-    .calendar {
-        display: none;
-    }
-
     #eventos-container {
         display: flex;
         flex-direction: row;
@@ -1700,19 +1695,6 @@ main {
         margin-top: 35px;
     }
 
-    #eventos-container span {
-        font-weight: 600;
-    }
-
-    #eventos-container .eventos-futuros .evento {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: 15px;
-        padding: 20px;
-        gap: 15px;
-    }
-
     #eventos-container .evento h2 {
         font-size: 16px;
         text-align: left;
@@ -1727,19 +1709,10 @@ main {
     }
 
     #eventos-container .eventos-passados .evento {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 15px;
-        padding: 20px;
         gap: 30px;
     }
 
     #eventos-container .cima, .baixo {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         gap: 20px;
     }
 
@@ -1751,35 +1724,15 @@ main {
         text-align: right;
     }
 
-    #eventos-container .event-icon {
-        display: flex;
-        justify-items: center;
-        gap: 10px;
-    }
-
     #eventos-container .event-icon:hover {
         transition: 0.2s ease;
         transform: scale(1.1)
     }
 
-    #eventos-container .event-icon img {
-        height: 40px;
-    }
-
-    #eventos-container .eventos-futuros .ad-calendario {
-        width: 100%;
-    }
-
     #eventos-container .eventos-futuros .btn-calendario {
-        width: 100%;
         color: black;
         background-color: white;
         border: #d9c4e7 1px solid;
-        border-radius: 30px;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-        padding: 15px 0px;
         cursor: pointer;
         transition: background 0.2s ease;
     }
@@ -1790,16 +1743,6 @@ main {
     }
 
     .btn-ver-mais {
-        margin-top: 20px;
-        padding: 12px 24px;
-        font-size: 14px;
-        border-radius: 30px;
-        background-color: #f1f1f1;
-        color: #3d3741;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        text-align: center;
         transition: background 0.2s ease;
     }
 
@@ -1807,154 +1750,17 @@ main {
         background-color: #d9bce7;
     }
 
+    .btn-ver-mais.active {
+        background-color: #d9bce7;
+    }
+
     #eventos-container .calendar-options {
-        position: absolute;
-        background: white;
-        border: 1px solid #d9bce7;
-        border-radius: 20px;
-        margin-top: 49px;
-        padding: 10px 0px 10px 0px;
-        z-index: 10;
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.171);
-        opacity: 1;
-        transition: opacity 150ms ease-in-out;
+        margin-top: 10px;
     }
 
-    .calendar-options a {
-        text-decoration: none;
-        color: #333;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .ad-calendario {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-}
-@media screen and (min-width: 1300px) {
-
-    .calendar {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: fit-content;
-        min-width: 400px;
-        width: 40%;
-        background-color: #fff;
-        border: #d9c4e7 1px solid;
-        border-radius: 30px;
-        padding: 40px 40px 50px 40px;
-    }
-
-    .calendar-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-
-    .calendar-header button {
-        background-color: transparent;
-        border: none;
-        font-size: 50px;
-        cursor: pointer;
-        color: #d9c4e7;
-    }
-
-    #prev-month, #next-month {
-        margin-bottom: 10px;
-        transition: 0.2s ease;
-    }
-
-    #prev-month:hover {
-        transform: scale(1.2);
-    }
-    #next-month:hover {
-        transform: scale(1.2);
-    }
-
-    #month-year {
-        font-size: 25px;
-        font-weight: 400;
-    }
-
-    .calendar-weekdays, .calendar-dates {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-    }
-
-    .calendar-dates div {
-        text-align: center;
-        padding: 10px 10px 50px 10px;
-        font-size: 12px;
-    }
-
-    .calendar-weekdays div {
-        text-align: center;
-        padding: 10px 10px 30px 10px;
-        font-weight: 400;
-    }
-
-    .calendar-dates div {
-        position: relative;
-        border-bottom: 1px solid #eaeef3;
-        border-left: 1px solid #eaeef3;
-        cursor: pointer;
-    }
-
-    .calendar-dates div:hover {
-        background-color: #f1f1f1;
-        color: black;
-    }
-
-    .current-date {
-        background-color: #d9c4e7;
-        color: white;
-        border-radius: 10%;
-    }
-
-    #eventos-container .eventos {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    #eventos-container .eventos-futuros, .eventos-passados {
-        margin-bottom: 30px;
-        width: 330px;
-    }
-
-    #eventos-container .evento {
-        border: 1px solid #d9bce700;
-        border-radius: 30px;
-        background-color: white;
-    }
-    
-    .evento.highlighted {
-        border: 1px solid #d9bce7 !important;
-        border-radius: 30px;
-        background-color: white;
-        transition: border 0.5s ease-in-out;
-    }
-
-    /* Estilização para o ícone de evento */
-    .evento-icon {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20px;
-        height: 20px;
-        pointer-events: none;
-        z-index: 0;
+    .calendar-options a:hover {
+        color: #d9bce7;
+        text-decoration: underline;
     }
 }
 /* -------------------- EVENTOS-MSG -------------------- */
