@@ -57,7 +57,7 @@ if (container.style.display === 'block') {
 
 
 
-// BOTÃO VER MAIS NO EVENTOS
+// BOTÃO VER MAIS NO EVENTOS PASSADOS
 document.addEventListener("DOMContentLoaded", function () {
     const eventosContainer = document.querySelector(".eventos-passados");
     const eventos = eventosContainer.querySelectorAll(".evento");
@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// BOTÃO VER MAIS NO EVENTOS FUTUROS
 document.addEventListener("DOMContentLoaded", function () {
   const eventosFuturosContainer = document.querySelector(".eventos-futuros");
   const eventosFuturos = eventosFuturosContainer.querySelectorAll(".evento");

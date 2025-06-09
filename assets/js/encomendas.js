@@ -1,4 +1,4 @@
-//?
+// ALTERNA ENTRE PEDIDO E ARQUIVO
 const btnPedido = document.getElementById('btn-pedido');
 const btnArquivo = document.getElementById('btn-arquivo');
 
@@ -19,7 +19,7 @@ btnArquivo.addEventListener('click', () => {
   secaoGaleria.style.display = 'block';
 });
 
-//POP UM ENCOMENDAS PERSONALIZADAS - CONFIRMADO
+// POP UM ENCOMENDAS PERSONALIZADAS
 document.querySelectorAll('.frame .foto img').forEach(img => {
     img.addEventListener('click', () => {
       const popup = document.getElementById('popup');

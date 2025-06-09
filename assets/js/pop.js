@@ -1,7 +1,6 @@
-//POP UP COLEÇÃO MOBILE + DESKTOP - CONFIRMADO
+// POP UP COLEÇÃO MOBILE
 const isMobile = window.innerWidth < 900;
 
-// ========== MOBILE SWIPER POPUP ==========
 if (isMobile) {
   const swiperPopup = new Swiper('.swiper-popup', {
     pagination: { el: '.swiper-pagination' },
@@ -38,7 +37,7 @@ if (isMobile) {
   });
 }
 
-// ========== DESKTOP ZOOM ==========
+// ZOOM DESKTOP
 if (!isMobile) {
   const mainImg = document.querySelector('#imagem-grande');
   const zoomBox = document.createElement('div');
