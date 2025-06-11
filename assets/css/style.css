@@ -74,8 +74,8 @@ main {
         z-index: 5;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
-        padding-bottom: 120px;
-        gap: 20px;
+        padding-bottom: 150px;
+        gap: 30px;
         box-sizing: border-box;
         overflow-y: auto;
     }
@@ -84,27 +84,22 @@ main {
         transform: translateX(0);
     }
 
-    .navigation .pesquisa form { /* Estilo da barra de pesquisa */
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-
     .navigation a {
         text-decoration: none;
         color: #3d3741;
         font-size: 20px;
+        font-weight: 400;
     }
 
     .navigation span {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .navigation li {
         list-style: none;
     }
 
-    #mobile span, #desktop span{
+    #mobile span, #desktop span {
         color: #d9c4e7;
     }
 }
@@ -774,6 +769,7 @@ main {
 
     .mensagem .texto {
         margin-top: 30px;
+        line-height: 21px;
     }
 
     .mensagem.ativa .imagem {
@@ -795,6 +791,7 @@ main {
     }
 
     .mensagem .titulo h2 {
+        text-align: left;
         font-size: 13px;
         font-weight: 400;
         margin-top: 5px;
@@ -825,6 +822,7 @@ main {
     .mensagem .ass {
         margin-top: 10px;
         font-style: italic;
+        text-align: center;
     }
 
     .navegacao {
@@ -847,7 +845,7 @@ main {
         background-color: #d9c4e7;
         border-radius: 50px;
         color: white;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .navegacao .nenhum button  {
@@ -1221,7 +1219,7 @@ main {
     }
 
     footer p {
-        margin-top: 30px;
+        margin-top: 40px;
         text-align: center;
         color: white;
         font-weight: 400;
@@ -1232,7 +1230,7 @@ main {
         display: flex;
         justify-content: center;
         gap: 10px;
-        margin: 20px;
+        margin: 20px 20px 40px 20px;
         align-items: center;
     }
 
@@ -1582,14 +1580,6 @@ main {
 
     .mensagem.ativa .imagem {
         width: 40%;
-        border-radius: 30px;
-        overflow: hidden;
-    }
-
-    .mensagem .imagem img {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 30px;
     }
 
     .mensagem.ativa .conteudo {
@@ -1599,23 +1589,7 @@ main {
     }
 
     .mensagem .titulo h1 {
-        font-size: 18px;
-        font-weight: 600;
         margin: 0px;
-    }
-
-    .mensagem .titulo h2 {
-        font-size: 13px;
-        font-weight: 400;
-        margin-top: 5px;
-        text-align: left;
-    }
-
-    .mensagem .dia {
-        margin-top: 15px;
-        font-size: 13px;
-        text-align: right;
-        font-style: italic;
     }
     
     .mensagem .texto {
@@ -1623,36 +1597,6 @@ main {
         font-weight: 400;
         line-height: 20px;
         margin-top: 20px;
-    }
-
-    .mensagem .ass {
-        margin-top: 10px;
-        font-style: italic;
-        text-align: center;
-        font-weight: 400;
-    }
-
-    .navegacao {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .navegacao a {
-        color: black;
-        font-size: 18px;
-    }
-
-    .navegacao button {
-        font-size: 25px;
-        padding: 10px 17px;
-        cursor: pointer;
-        background-color: #d9c4e7;
-        border-radius: 50px;
-        color: white;
-        font-weight: 600;
     }
 
     #eventos-container .mensagens .mensagem span {
