@@ -116,6 +116,7 @@ main {
         width: 100%;
         height: 300px;
         position: relative;
+        border-radius: 30px;
         overflow: hidden;
     }
 
@@ -123,17 +124,27 @@ main {
         width: 100%;
         height: 100%;
         position: absolute;
+        border-radius: 30px;
         top: 0;
         left: 0;
     }
 
-    #home .mySlides-fade img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 30px;
+    @keyframes zoomOut {
+    from {
+        transform: scale(1.1);
     }
+    to {
+        transform: scale(1);
+    }
+}
+#home .mySlides-fade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    animation: zoomOut 2s ease-in-out;
+}
 
     #home .dots {
         display: flex;
@@ -153,17 +164,6 @@ main {
 
     #home .active {
         background-color: #d9c4e7;
-    }
-
-    /* Fading animation */
-    #home .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
     }
 
     #home .novidades {
